@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Nunito:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    body{
+        @apply text-whiteColor bg-primaryColor tracking-wider font-dmsans;
+    }
+}
+
+@layer components{
+    .nav-link {
+        @apply hover:text-secondaryColor ease-in duration-200;
+    }
+}

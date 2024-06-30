@@ -28,6 +28,10 @@ module.exports = {
         sm: '1.5rem'
       }
     },
+    fontFamily: {
+      oswald: ['Oswald', 'sans-serif'],
+      dmsans: ['DM Sans', 'sans-serif']
+    }
   },
   plugins: [],
 }
