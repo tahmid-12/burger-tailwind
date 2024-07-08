@@ -47,7 +47,7 @@
                     md:py-0 md:border-none md:w-auto md:ml-auto" id="nav-menu">
             <ul class="flex flex-col text-center gap-5 md:flex-row">
               <li>
-                <a href="#home" class="nav__link nav-link">Home</a>
+                <a href="#home" class="nav__link text-secondaryColor nav-link">Home</a>
               </li>
               <li>
                 <a href="#about" class="nav__link nav-link">About Us</a>
@@ -83,10 +83,10 @@
       <section id="home">
         <div class="container flex flex-col items-center gap-10 md:flex-row">
           <div class="mx-auto md:basis-1/2 lg:basis-2/5 animate-movingY">
-            <img src="img/home-image.png" alt="Burger Image" class="w-60 md:w-full"/>
+            <img src="img/home-image.png" alt="Burger Image" class="home__image w-60 md:w-full"/>
           </div>
 
-          <div class="text-center md:basis-1/2 md:text-start lg:basis-3/5">
+          <div class="home__content text-center md:basis-1/2 md:text-start lg:basis-3/5">
             <h1 class="home__title">HAPPY TUMMY WITH TASTY BURGERS.</h1>
             <div class="separator mx-auto md:mx-0"></div>
             <p class="paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore maiores accusamus eligendi nobis cumque id. Nisi officiis vel ducimus in tenetur impedit sunt 
@@ -118,7 +118,7 @@
       <section id="category">
         <div class="container flex flex-col gap-5 md:flex-row">
           <!-- Card 1  -->
-          <div class="bg-secondaryColor flex py-3 rounded-lg overflow-hidden md:flex-1">
+          <div class="category__card bg-secondaryColor flex py-3 rounded-lg overflow-hidden md:flex-1">
             <div class="basis-1/3 relative animate-movingY">
               <img src="img/burger-1.png" alt="category Image" class="absolute w-28 -bottom-4 -left-4">
             </div>
@@ -133,7 +133,7 @@
           </div>
 
           <!-- Card 2  -->
-          <div class="bg-redColor flex py-3 rounded-lg overflow-hidden md:flex-1">
+          <div class="category__card bg-redColor flex py-3 rounded-lg overflow-hidden md:flex-1">
             <div class="basis-1/3 relative animate-movingY">
               <img src="img/snack-1.png" alt="category Image" class="absolute w-28 -bottom-4 -left-4">
             </div>
@@ -148,7 +148,7 @@
           </div>
 
           <!-- Card 3  -->
-          <div class="bg-greenColor flex py-3 rounded-lg overflow-hidden md:flex-1">
+          <div class="category__card bg-greenColor flex py-3 rounded-lg overflow-hidden md:flex-1">
             <div class="basis-1/3 relative animate-movingY">
               <img src="img/beverage-2.png" alt="category Image" class="absolute w-28 -bottom-4 -left-4">
             </div>
@@ -169,7 +169,7 @@
       <section id="promo">
         <div class="container flex flex-col gap-5 lg:gap-10 lg:flex-row">
           <!-- Card 1 -->
-          <div class="bg-primaryColorLight dark:bg-darkColorLight flex flex-col p-5 rounded-lg md:flex-row md:items-cener lg:flex-row-reverse lg:flex-1">
+          <div class="promo__card-1 bg-primaryColorLight dark:bg-darkColorLight flex flex-col p-5 rounded-lg md:flex-row md:items-cener lg:flex-row-reverse lg:flex-1">
             <img src="img/promo-1.png" alt="promo image" class="w-40 mx-auto hover:animate-movingY">
             
             <div class="space-y-2 pt-5 md:pt-0">
@@ -182,7 +182,7 @@
           </div>
 
           <!-- Card 2 -->
-          <div class="bg-primaryColorLight dark:bg-darkColorLight flex flex-col p-5 rounded-lg md:flex-row md:items-cener lg:flex-row-reverse lg:flex-1">
+          <div class="promo__card-2 bg-primaryColorLight dark:bg-darkColorLight flex flex-col p-5 rounded-lg md:flex-row md:items-cener lg:flex-row-reverse lg:flex-1">
             <img src="img/promo-2.png" alt="promo image" class="w-40 mx-auto hover:animate-movingY">
             
             <div class="space-y-2 pt-5 md:pt-0">
@@ -195,7 +195,7 @@
           </div>
 
           <!-- Card 3 -->
-          <div class="bg-primaryColorLight dark:bg-darkColorLight flex flex-col p-5 rounded-lg md:flex-row md:items-cener lg:flex-row-reverse lg:flex-1">
+          <div class="promo__card-3 bg-primaryColorLight dark:bg-darkColorLight flex flex-col p-5 rounded-lg md:flex-row md:items-cener lg:flex-row-reverse lg:flex-1">
             <img src="img/promo-1.png" alt="promo image" class="w-40 mx-auto hover:animate-movingY">
             
             <div class="space-y-2 pt-5 md:pt-0">
@@ -212,11 +212,11 @@
       <!--~~~~~~~~~~~~~~~ About ~~~~~~~~~~~~~~~-->
       <section id="about">
         <div class="container flex flex-col gap-10 md:flex-row">
-          <div class="flex-1">
+          <div class="about__img flex-1">
             <img src="img/about.jpg" alt="About Image" class="rounded-lg">
           </div>
 
-          <div class="flex-1">
+          <div class="about__content flex-1">
             <h2 class="section__title">FIND FOOD AND DRINKS, ALL-IN-ONE PLACE FOR YOUR BEST TASTE.</h2>
             <div class="separator"></div>
             <p class="paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore maiores accusamus eligendi nobis cumque id. Nisi officiis vel ducimus in tenetur impedit sunt 
@@ -263,7 +263,7 @@
               </div>
           </div>
 
-          <div>
+          <div class="menu__items">
             <ul class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 lg:gap-12">
 
               <!-- Food -->
@@ -505,7 +505,7 @@
 
       <!--~~~~~~~~~~~~~~~ Review ~~~~~~~~~~~~~~~-->
       <section id="review" class="bg-primaryColorLight dark:bg-darkColorLight py-20">
-        <div class="container">
+        <div class="customer__review container">
           <div class="max-w-md mx-auto text-center">
             <h2 class="section__title">CUSTOMER REVIEW</h2>
             <div class="separator mx-auto"></div>
