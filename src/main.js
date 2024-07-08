@@ -88,3 +88,29 @@ const swiper = new Swiper('.swiper', {
         }
       }
 });
+
+//scroll up
+const scrollUp = () => {
+    const scrollUpBtn = document.getElementById("scroll-up");
+
+    if(this.scrollY >= 250){
+        scrollUpBtn.classList.remove("-bottom-1/2");
+        scrollUpBtn.classList.add("bottom-4");
+    }else{
+        scrollUpBtn.classList.add("-bottom-1/2");
+        scrollUpBtn.classList.remove("bottom-4");
+    }
+}
+window.addEventListener('scroll',scrollUp);
+
+//Scroll Header
+const scrollHeader = () => {
+    const  header = document.getElementById("header");
+
+    if(this.scrollY >= 50){
+        header.classList.add("border-b", "border-secondaryColor");
+    }else{
+        header.classList.remove("border-b", "border-secondaryColor");
+    }
+}
+window.addEventListener('scroll',scrollHeader);
